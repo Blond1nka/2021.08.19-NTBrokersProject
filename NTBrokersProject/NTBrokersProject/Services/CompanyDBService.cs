@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NTBrokersProject.Services
 {
-    public class RealEstateDBService
+    public class CompanyDBService
     {
         
     }

@@ -20,14 +20,14 @@ namespace NTBrokersProject.Controllers
         
         public IActionResult Index()
         {
-            List<BrokerModel> data = _brokerDBService.Read();
+            List<BrokerModel> data = _brokerDBService.GetAll();
             return View(data);
         }
 
         public IActionResult Submit(BrokerModel model)
         {
             _brokerDBService.AddBroker(model);
-            List<BrokerModel> data = _brokerDBService.Read();
+            List<BrokerModel> data = _brokerDBService.GetAll();
             return View("Index", data);
         }
         public IActionResult Create()

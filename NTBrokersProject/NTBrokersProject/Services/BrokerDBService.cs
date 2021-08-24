@@ -28,7 +28,7 @@ namespace NTBrokersProject.Services
         }
 
 
-        public List<BrokerModel> Read()
+        public List<BrokerModel> GetAll()
         {
             List<BrokerModel> items = new();
 

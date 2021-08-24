@@ -11,12 +11,10 @@ namespace NTBrokersProject.Controllers
     public class ApartmentController : Controller
     {
         private readonly ApartmentDBService _apartmentDBService;
-        private readonly RealEstateDBService _realEstateDBService;
 
-        public ApartmentController(ApartmentDBService apartmentDBService, RealEstateDBService realEstateDBService)
+        public ApartmentController(ApartmentDBService apartmentDBService)
         {
-            _apartmentDBService = apartmentDBService;
-            _realEstateDBService = realEstateDBService;
+            _apartmentDBService = apartmentDBService; 
         }
 
 

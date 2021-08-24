@@ -27,7 +27,6 @@ namespace NTBrokersProject
         {
             services.AddScoped<BrokerDBService>();
             services.AddScoped<ApartmentDBService>();
-            services.AddScoped<RealEstateDBService>();
             services.AddTransient<SqlConnection>(_ => new SqlConnection(Configuration["ConnectionStrings:Default"]));
             services.AddControllersWithViews();
         }
