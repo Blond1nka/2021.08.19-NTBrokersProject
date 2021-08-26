@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NTBrokersProject.Models;
 using NTBrokersProject.Services;
 using System;
 using System.Collections.Generic;
@@ -10,39 +11,32 @@ namespace NTBrokersProject.Controllers
 {
     public class ApartmentController : Controller
     {
-        private readonly ApartmentDBService _apartmentDBService;
+        private readonly MainDBService _mainDBService;
 
-        public ApartmentController(ApartmentDBService apartmentDBService)
+        public ApartmentController(MainDBService mainDBService)
         {
-            _apartmentDBService = apartmentDBService; 
+            _mainDBService = mainDBService;
         }
 
 
         // GET: ApartmentController
-        public ActionResult Index()
+        public IActionResult Index()
         {
-            return View();
+            return View(_mainDBService._apartmentDBService.GetAll());
         }
 
-        // GET: ApartmentController/Details/5
-        //public ActionResult Submit(RealEstateDBService model)
-        //{
-        //    _apartmentDBService.Create(model);
-        //    RealEstateDBService data = new();
-        //    data.Apartments = _apartmentDBService.Read();
-        //    return View("Index", data);
-        //}
-    }
+        public IActionResult Create()
+        {
+            return View(new ApartmentCreateModel { Apartments = new ApartmentModel() });
+        }
 
-        // GET: ApartmentController/Create
-        //public ActionResult Create()
-        //{
-        //    RealEstateDBService data = _realEstateDBService.GetGeneralDBData();
-        //    return View(data);
-        //}
+        public IActionResult Submit(ApartmentModel model)
+        {
+            _mainDBService._apartmentDBService.Create(model);
+            return View("Index", _mainDBService._apartmentDBService.GetAll());
+        }
 
 
-
-        
+    }      
     
 }

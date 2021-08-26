@@ -363,3 +363,5 @@ C:\Users\Šmara\Desktop\Po\2021.08.19 NTBrokersProject\NTBrokersProject\NTBroker
 C:\Users\Šmara\Desktop\Po\2021.08.19 NTBrokersProject\NTBrokersProject\NTBrokersProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
 C:\Users\Šmara\Desktop\Po\2021.08.19 NTBrokersProject\NTBrokersProject\NTBrokersProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Šmara\Desktop\Po\2021.08.19 NTBrokersProject\NTBrokersProject\NTBrokersProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Šmara\Desktop\Po\2021.08.19 NTBrokersProject\NTBrokersProject\NTBrokersProject\obj\Debug\net5.0\Razor\Views\Apartment\Create.cshtml.g.cs
+C:\Users\Šmara\Desktop\Po\2021.08.19 NTBrokersProject\NTBrokersProject\NTBrokersProject\obj\Debug\net5.0\Razor\Views\Apartment\Index.cshtml.g.cs

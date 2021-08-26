@@ -17,7 +17,7 @@ namespace NTBrokersProject.Services
             _connection = connection;
         }
 
-        public List<ApartmentModel> GetData()
+        public List<ApartmentModel> GetAll()
         {
             List<ApartmentModel> items = new();
 

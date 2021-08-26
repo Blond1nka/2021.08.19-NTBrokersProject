@@ -1,0 +1,31 @@
+﻿@model NTBrokersProject.Models.ApartmentCreateModel
+
+<h5>Create new apartment</h5>
+
+@using (Html.BeginForm("Submit", "Apartment", FormMethod.Post))
+{
+    <div class="container-full" style="background-color:aliceblue">
+        <div class="container">
+            @Html.LabelFor(x => x.Apartments.City)
+            @Html.TextBoxFor(x => x.Apartments.City)
+
+            @Html.LabelFor(x => x.Apartments.Street)
+            @Html.TextBoxFor(x => x.Apartments.Street)
+
+            @Html.LabelFor(x => x.Apartments.Address)
+            @Html.TextBoxFor(x => x.Apartments.Address)
+
+            @Html.LabelFor(x => x.Apartments.FlatFloor)
+            @Html.TextBoxFor(x => x.Apartments.FlatFloor)
+
+            @Html.LabelFor(x => x.Apartments.BuildingFloors)
+            @Html.TextBoxFor(x => x.Apartments.BuildingFloors)
+
+            @Html.LabelFor(x => x.Apartments.Area)
+            @Html.TextBoxFor(x => x.Apartments.Area)
+
+            @Html.DropDownListFor(x => x.Apartments.CompanyId, new SelectList(Model.Companies, "Id", "Name"))
+            <input type="submit" value="Submit" />
+        </div>
+    </div>
+}

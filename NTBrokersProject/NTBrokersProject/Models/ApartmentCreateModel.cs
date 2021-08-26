@@ -8,8 +8,9 @@ namespace NTBrokersProject.Models
 {
     public class ApartmentCreateModel
     {
-        public string Apartment { get; set; }
-        public string Company { get; set; }
-        public string Broker { get; set; }
+        public ApartmentModel Apartments { get; set; } = new ApartmentModel();
+        public List<CompanyModel> Companies { get; set; } = new List<CompanyModel>();
+        public List <BrokerModel> Brokers { get; set; }
+
     }
 }

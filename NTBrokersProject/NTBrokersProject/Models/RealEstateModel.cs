@@ -8,13 +8,13 @@ namespace NTBrokersProject.Models
 {
     public class RealEstateModel
     {
-        public ApartmentModel Apartments { get; set; }
+      
         public ApartmentCreateModel ApartmentCreateModel { get; set; }
 
         public CompanyModel Company { get; set; }
         public CompanyCreateModel CompanyCreateModel { get; set; }
 
-        public List<CompanyModel> Companies { get; set; }
+       
         public List<BrokerModel> Brokers { get; set; }
     }
 }

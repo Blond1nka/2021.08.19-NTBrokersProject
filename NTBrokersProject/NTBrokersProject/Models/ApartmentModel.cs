@@ -17,5 +17,9 @@ namespace NTBrokersProject.Models
         public decimal Area { get; set; }
         public int CompanyId { get; set; }
         public int BrokerId { get; set; }
+
+        public string Apartment { get; set; }
+        public string Company { get; set; }
+        public string Broker { get; set; }
     }
 }
